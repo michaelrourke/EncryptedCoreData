@@ -1,0 +1,6 @@
+.DS_Store
+ECDCoreData.xcodeproj/
+Info.plist
+InfoPlist.strings
+Prefix.pch
+main.m
