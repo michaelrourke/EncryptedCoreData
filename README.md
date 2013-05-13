@@ -17,4 +17,6 @@ Note that the *Password* entity is distinct from the *Entry* entity, so that the
 
 The *PasswordFile* class is a singleton representing the (single) open file and importantly maps the *managedObjectContext* to the appropriate open file. This is needed to supply the encryption key, and also to handle errors. This is easily extended for apps with multiple encrypted core data files open at a time.
 
-Note that *PasswordFile* *ManagedDocument* and *Application* clases are basically stubs containing only the essential methods to demonstrate how to use the model classes.
+Note that *PasswordFile* *ManagedDocument* and *Application* classes are basically stubs containing only the essential methods to demonstrate how to use the model classes.
+
+Michael
