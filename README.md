@@ -13,7 +13,7 @@ Each entity is encrypted with AES with a 256 bit key, and includes a SHA1 HMAC t
 
 Looking at the core data schema you will see that each entity contains a single persistent binary data attribute that contains the encrypted data (gD eD or pD), and all the working attributes are transient. *awakeFromFetch* decrypts each entity, when required, and *willSave* rebuilds the persistent data from the transient attributes. (The names are purposely short as they are exposed in the binary core data file.)
 
-![Core Data Entities](CoreDataEntities.png)
+![Core Data Entities](https://raw.githubusercontent.com/michaelrourke/EncryptedCoreData/master/CoreDataEntities.PNG)
 
 Note that the *Password* entity is distinct from the *Entry* entity, so that the decryption of the password may be decoupled from the decryption of the entity. This minimises the presence of clear text passwords in the memory of the running application. This has also permitted easy implementation of a Password History feature (with an extended schema from the one presented here).
 
