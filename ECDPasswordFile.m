@@ -9,6 +9,7 @@
  */
 
 #import "ECDPasswordFile.h"
+#import "ECDManagedDocument.h"
 
 @interface ECDPasswordFile()
 @property (nonatomic) ECDManagedDocument *currentDocument;
