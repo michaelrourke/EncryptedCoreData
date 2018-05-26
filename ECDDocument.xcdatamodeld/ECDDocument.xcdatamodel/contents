@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="12141" systemVersion="17E202" minimumToolsVersion="Xcode 4.1" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="E" representedClassName="ECDEntry" syncable="YES">
+        <attribute name="eD" optional="YES" attributeType="Binary" syncable="YES">
+            <userInfo/>
+        </attribute>
+        <attribute name="modifiedDate" optional="YES" transient="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES">
+            <userInfo/>
+        </attribute>
+        <attribute name="notes" optional="YES" transient="YES" attributeType="String" valueTransformerName="blowfish" syncable="YES">
+            <userInfo/>
+        </attribute>
+        <attribute name="title" optional="YES" transient="YES" attributeType="String" valueTransformerName="blowfish" syncable="YES">
+            <userInfo/>
+        </attribute>
+        <attribute name="url" optional="YES" transient="YES" attributeType="String" valueTransformerName="blowfish" syncable="YES">
+            <userInfo/>
+        </attribute>
+        <attribute name="username" optional="YES" transient="YES" attributeType="String" valueTransformerName="blowfish" syncable="YES">
+            <userInfo/>
+        </attribute>
+        <relationship name="g" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="G" inverseName="e" inverseEntity="G" indexed="YES" syncable="YES">
+            <userInfo/>
+        </relationship>
+        <relationship name="p" optional="YES" minCount="1" maxCount="1" deletionRule="Cascade" destinationEntity="P" inverseName="o" inverseEntity="P" indexed="YES" syncable="YES">
+            <userInfo/>
+        </relationship>
+        <userInfo/>
+    </entity>
+    <entity name="G" representedClassName="ECDGroup" syncable="YES">
+        <attribute name="gD" optional="YES" attributeType="Binary" syncable="YES">
+            <userInfo/>
+        </attribute>
+        <attribute name="groupName" optional="YES" transient="YES" attributeType="String" valueTransformerName="blowfish" syncable="YES">
+            <userInfo/>
+        </attribute>
+        <relationship name="e" optional="YES" toMany="YES" deletionRule="Deny" destinationEntity="E" inverseName="g" inverseEntity="E" indexed="YES" syncable="YES">
+            <userInfo/>
+        </relationship>
+        <userInfo/>
+    </entity>
+    <entity name="P" representedClassName="ECDPassword" syncable="YES">
+        <attribute name="modifiedDate" optional="YES" transient="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES">
+            <userInfo/>
+        </attribute>
+        <attribute name="password" optional="YES" transient="YES" attributeType="String" syncable="YES">
+            <userInfo/>
+        </attribute>
+        <attribute name="pD" optional="YES" attributeType="Binary" syncable="YES">
+            <userInfo/>
+        </attribute>
+        <relationship name="o" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="E" inverseName="p" inverseEntity="E" indexed="YES" syncable="YES">
+            <userInfo/>
+        </relationship>
+        <userInfo/>
+    </entity>
+    <elements>
+        <element name="E" positionX="-54" positionY="-45" width="128" height="165"/>
+        <element name="G" positionX="-308" positionY="-153" width="128" height="90"/>
+        <element name="P" positionX="160" positionY="192" width="128" height="105"/>
+    </elements>
+</model>

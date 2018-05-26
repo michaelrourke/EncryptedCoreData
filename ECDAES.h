@@ -14,4 +14,8 @@
 + (NSData *)decrypt:(NSData *)cypher key:(unsigned char *)AESKey;
 + (unsigned char *)make384Key:(NSString *)key;
 
+#define AES_KEY_LENGTH kCCKeySizeAES256
+#define AES128PADDING(clearLength)      ((clearLength) % kCCBlockSizeAES128 ? \
+                                                kCCBlockSizeAES128 - (clearLength) % kCCBlockSizeAES128 : 0)
+
 @end
